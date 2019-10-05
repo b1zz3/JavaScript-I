@@ -5,9 +5,7 @@
 // };
 // myFunction();
 
-myFunction = () => {
-    console.log("Function was invoked!");
-}
+let myFunction = () => console.log("Function was invoked!");
 myFunction();
 
 // let anotherFunction = function (param) {
@@ -16,8 +14,7 @@ myFunction();
 // anotherFunction("Example");
 
 let anotherFunction = (param) => param;
-
-anotherFunction();
+console.log(anotherFunction("Example"));
 
 
 // let add = function (param1, param2) {
@@ -25,18 +22,16 @@ anotherFunction();
 // };
 // add(1,2);
 
-let add = (param1,param2) => {
-    return param1 + param2;
-}
-
-add(2,3);
+let add = (param1,param2) => param1 + param2;
+console.log(add(2,3));
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
-
+let subtract = (param1, param2) => param1-param2;
+console.log(subtract(10,7));
 // Stretch
 
 // exampleArray = [1,2,3,4];
